@@ -1,4 +1,5 @@
 import pic from "../assets/pic.jpg";
+import resume from "../assets/resume.pdf";
 
 export default function AboutMe() {
   return (
@@ -67,11 +68,12 @@ export default function AboutMe() {
           Terminal, Firebase, Netlify, and Git.
         </div>
         <a
-          href="https://drive.google.com/file/d/1QbEC67iIFgZP-XMQUuPWmWbaOd7-xia_/view?usp=share_link"
+          href={resume}
           className="home__section__button"
-          title="Download CV"
+          title="Resume"
           target="_blank"
           rel="noreferrer"
+          download
         >
           Download CV
         </a>
