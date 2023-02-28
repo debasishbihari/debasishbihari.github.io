@@ -403,6 +403,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap:30px;
   margin-top: 2em;
   margin-bottom: -2em;
   margin-right: -4em;
@@ -586,7 +587,9 @@ body {
   border-bottom: 0px;
 }
 .card__info {
-  font-size: 15px;
+  // display:flex;
+  // column-gap:10px;
+  font-size: 30px;
   color: var(--text);
   min-height: 50px;
   z-index: 2;

@@ -1,7 +1,8 @@
 import ServicesCard from "./ServicesCard";
 import{TiHtml5,TiCss3} from "react-icons/ti"
 import{SiJavascript,SiVercel,SiNetlify,SiPostman,SiTypescript,SiReact,SiRedux,SiTailwindcss,SiChakraui,SiExpress} from "react-icons/si"
-import {DiNodejs,DiMongodb,DiNpm,DiGithubBadge} from "react-icons/di"
+import {DiNodejs,DiMongodb,DiNpm,DiGithubBadge} from "react-icons/di";
+
 export default function Services() {
   return (
     <section id="services__section" className="services__section">
@@ -14,19 +15,16 @@ export default function Services() {
           title="Tech Skills"
           skills={[
             <TiHtml5/>,
-            <TiCss3/>
-            // <SiJavascript/>,
-            // <SiTypescript/>,
-            // <SiReact/>,
-            // <SiRedux/>,
-            // <SiTailwindcss/>,
-            // <SiChakraui/>,
-            // <DiNodejs/>,
-            // <SiExpress/>,
-            // <DiMongodb/>,
-            // "NPM",
-            // "Git",
-            // "Postman",
+            <TiCss3/>,
+            <SiJavascript/>,
+            <SiTypescript/>,
+            <SiReact/>,
+            <SiRedux/>,
+            <SiTailwindcss/>,
+            <SiChakraui/>,
+            <DiNodejs/>,
+            <SiExpress/>,
+            <DiMongodb/>
           ]}
         />
         <ServicesCard
