@@ -228,6 +228,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  margin-left: 20px;
 }
 .header__content__nav__button__input:hover
   ~ .header__content__nav__button__content {
@@ -735,7 +737,7 @@ body {
 }
 .work__section__entry__right__links__link {
   font-size: 15px;
-  color: var(--text);
+  color: white;
   margin-left: 1em;
 }
 .work__section__entry__right__links__link:hover {
@@ -854,6 +856,19 @@ body {
 }
 .services__section__content__list:hover {
   border-color: var(--primary);
+}
+.github_stats{
+  width: 70%;
+ display: flex;
+ justify-content: space-between;
+ gap: 20px;
+ flex-wrap: wrap;
+ margin-bottom: 30px;
+}
+.github_calender{
+ // border: 2px solid red;
+  margin-bottom: 150px;
+  color: white;
 }
 @media (max-width: 1440px) {
   .social__links {

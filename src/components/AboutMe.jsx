@@ -1,5 +1,6 @@
 import pic from "../assets/pic.jpg";
 import resume from "../assets/resume.pdf";
+import { openNew } from "../utils/resumefn";
 
 export default function AboutMe() {
   return (
@@ -74,6 +75,7 @@ export default function AboutMe() {
           target="_blank"
           rel="noreferrer"
           download
+          onClick={openNew}
         >
           Download CV
         </a>

@@ -4,6 +4,8 @@ import OutsideClickHandler from "react-outside-click-handler";
 import LogoS from "../assets/logo-D.png";
 import { useNavigate } from "react-router-dom";
 import NavLink from "./NavLink";
+import resume from "../assets/resume.pdf";
+import { openNew } from "../utils/resumefn";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -41,6 +43,10 @@ export default function Header() {
       }
     });
   }, []);
+
+  // const openNew=()=>{
+  //  (window.open("https://drive.google.com/file/d/1QbEC67iIFgZP-XMQUuPWmWbaOd7-xia_/view?usp=share_link"))
+  // }
 
   return (
     <div className="header">
@@ -98,6 +104,19 @@ export default function Header() {
                     />
                   ))}
                 </div>
+                <div>
+        <a
+          href={resume}
+           className="header__content__nav__button__content"
+          title="Resume"
+          target="_blank"
+          rel="noreferrer"
+          download={true}
+          onClick={openNew}
+        >
+          Resume
+        </a>
+    </div>
                 <div className="header__content__nav__button">
                   <input
                     id="contact"

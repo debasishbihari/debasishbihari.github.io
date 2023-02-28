@@ -1,5 +1,7 @@
 import ServicesCard from "./ServicesCard";
-
+import{TiHtml5,TiCss3} from "react-icons/ti"
+import{SiJavascript,SiVercel,SiNetlify,SiPostman,SiTypescript,SiReact,SiRedux,SiTailwindcss,SiChakraui,SiExpress} from "react-icons/si"
+import {DiNodejs,DiMongodb,DiNpm,DiGithubBadge} from "react-icons/di"
 export default function Services() {
   return (
     <section id="services__section" className="services__section">
@@ -9,42 +11,33 @@ export default function Services() {
       </div>
       <div className="services__section__content">
         <ServicesCard
-          title="Frontend"
+          title="Tech Skills"
           skills={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Typescript",
-            "React",
-            "Redux",
-            "NextJS",
-            "Material UI",
-            "Bootstrap",
-            "Tailwind",
-            "Chakra UI",
-            "NPM",
-            "Git",
-            "Postman",
+            <TiHtml5/>,
+            <TiCss3/>
+            // <SiJavascript/>,
+            // <SiTypescript/>,
+            // <SiReact/>,
+            // <SiRedux/>,
+            // <SiTailwindcss/>,
+            // <SiChakraui/>,
+            // <DiNodejs/>,
+            // <SiExpress/>,
+            // <DiMongodb/>,
+            // "NPM",
+            // "Git",
+            // "Postman",
           ]}
         />
         <ServicesCard
-          title="Backend"
+          title="Tools"
           skills={[
-            "NodeJS",
-            "ExpressJS",
-            "MongoDB",
-            "Git",
-            "NPM",
-            "Postman",
-            "Rest",
-            "Authentication",
-            "Redis",
-            "AWS",
+            <DiNpm/>,
+            <DiGithubBadge/>,
+            <SiPostman/>,
+            <SiNetlify/>,
+            <SiVercel/>
           ]}
-        />
-        <ServicesCard
-          title="Testing & Analytics"
-          skills={["Jest", "Cypress"]}
         />
       </div>
     </section>

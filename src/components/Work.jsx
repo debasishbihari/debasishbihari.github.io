@@ -1,5 +1,6 @@
 import lately from "../assets/lately.png";
 import unbounce from "../assets/unbounce.png";
+import nearbuy from "../assets/nearbuy.png"
 import WorkCard from "./WorkCard";
 
 export default function Work() {
@@ -11,6 +12,14 @@ export default function Work() {
         </div>
         <div className="home__section__heading">Projects</div>
       </div>
+      <WorkCard
+        tech={["HTML", "CSS", "JavaScript","React","React-Hooks","Redux-Toolkit","Chakra-UI"]}
+        heading={["Nearbuy"]}
+        banner={nearbuy}
+        info="nearbuy helps you discover the best things to do, eat and buy – wherever you are! Make every day awesome with nearbuy. Dine at the finest restaurants, relax at the best spas, pamper yourself with exciting wellness and shopping offers or just explore your city intimately… you will always find a lot more to do with nearbuy."
+        siteLink="https://beautiful-kitten-367e3e.netlify.app/"
+        githubLink="https://github.com/debasishbihari/lame-crayon-5872"
+      />
       <WorkCard
         tech={["HTML", "CSS", "JavaScript"]}
         heading={["Lately"]}
