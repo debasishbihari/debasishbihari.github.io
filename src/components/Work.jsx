@@ -1,6 +1,7 @@
 import lately from "../assets/lately.png";
 import unbounce from "../assets/unbounce.png";
-import nearbuy from "../assets/nearbuy.png"
+import nearbuy from "../assets/nearbuy.png";
+import silktouch from "../assets/silktouch.png"
 import WorkCard from "./WorkCard";
 
 export default function Work() {
@@ -12,6 +13,14 @@ export default function Work() {
         </div>
         <div className="home__section__heading">Projects</div>
       </div>
+      <WorkCard
+        tech={["React","React-Hooks","Redux-Toolkit","Chakra-UI","NodeJs","ExpressJs","MongoDB"]}
+        heading={["SilkTouch"]}
+        banner={silktouch}
+        info="Silk Touch is web store which sells cosmetics and skin care products.Shop trusted skin care, makeup and beauty products, including SkinCeuticals, Obagi, Sunday Riley and Oribe."
+        siteLink="https://silktouch.netlify.app/"
+        githubLink="https://github.com/abha2510/SILKTOUCH"
+      />
       <WorkCard
         tech={["HTML", "CSS", "JavaScript","React","React-Hooks","Redux-Toolkit","Chakra-UI"]}
         heading={["Nearbuy"]}

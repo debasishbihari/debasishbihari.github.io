@@ -6,7 +6,7 @@ export default function ServicesCard({ title, skills }) {
       <div className="card__info">
         {skills.map((skill, i) =>
           // i !== skills.length - 1 ? skill + ", " : skill
-          skill
+          <div>{skill}</div>
         )}
       </div>
     </div>

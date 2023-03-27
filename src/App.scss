@@ -587,16 +587,18 @@ body {
   border-bottom: 0px;
 }
 .card__info {
-  // display:flex;
-  // column-gap:10px;
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
   font-size: 30px;
   color: var(--text);
-  min-height: 50px;
-  z-index: 2;
-  text-transform: capitalize;
-  height: fit-content;
+  // min-height: 50px;
+  // z-index: 2;
+  // text-transform: capitalize;
+  height:150px;
   width: 100%;
 }
+
+
 .card__image__reverse {
   margin: 0em auto;
   border-radius: 50px;
@@ -862,17 +864,55 @@ body {
 }
 .github_stats{
   width: 70%;
- display: flex;
- justify-content: space-between;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
  gap: 20px;
- flex-wrap: wrap;
  margin-bottom: 30px;
 }
-.github_calender{
- // border: 2px solid red;
-  margin-bottom: 150px;
-  color: white;
+.github_calender {
+  width: 70%;
+  margin:auto;
 }
+@media only screen and (max-width: 800px) and (min-width: 601px){
+  .github_stats{
+    width: 100%;
+    // margin:auto;
+    display: block;
+    // grid-template-columns: repeat(1,1fr);
+  }
+  .github_stats>div{
+    margin-bottom: 20px;
+  }
+  .github_stats>div>img{
+    width: 100%;
+  }
+  .github_calender{
+    width:100%;
+    margin:auto;
+  }
+}
+@media only screen and (max-width: 600px){
+  .github_calender{
+    width:100%;
+    margin:auto;
+  }
+  .github_stats{
+    width: 100%;
+    // margin:auto;
+    display: block;
+    // grid-template-columns: repeat(1,1fr);
+  }
+  .github_stats>div{
+    margin-bottom: 20px;
+  }
+  .github_stats>div>img{
+    width: 100%;
+  }
+  
+}
+
+
 @media (max-width: 1440px) {
   .social__links {
     left: 2em;
